@@ -1,0 +1,23 @@
+.newCollection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.newCollectionTitlse{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 33%;
+    color: aliceblue;
+}
+.button{
+    width: 16vw;
+    height: 3vw;
+    background: none;
+    color: aliceblue;
+    border-radius: 50px;
+    font-size: 15px;
+    background-color: rgba(25,17,11,.2);
+    border-color: #fff;
+}

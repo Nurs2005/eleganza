@@ -1,0 +1,61 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-left: 3.125vw;
+    padding-right: 3.125vw;
+    color: aliceblue;
+    transition: background-color 0.3s ease;
+  }
+  .headerOff{
+    background-color: aliceblue;
+
+  }
+.hovered{
+    background-color: aliceblue;
+    color: rgb(58, 48, 36)
+}
+.scrolled{
+    background-color: aliceblue;
+    color: rgb(58, 48, 36) 
+}
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+.menuBlock{
+    display: flex;
+    width: 15%;
+    font-size: 0.8vw;
+
+}
+
+.menu{
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    width: 20%;
+    text-align: center;
+    font-size: 28px;
+}
+.aboutInfo{
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    text-align: center;
+}
+span{
+    font-size: 0.9vw;
+}
+

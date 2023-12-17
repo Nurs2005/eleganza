@@ -1,0 +1,26 @@
+/* ... (остальные стили) */
+.FrontPage {
+    flex-direction: column;
+    position: relative;
+    transition: 0.5s;
+    font-family: "Merianda";
+}
+
+.video-bg {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.headFicksed {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+.headFicksed .FrontPage {
+    overflow: hidden;
+}
