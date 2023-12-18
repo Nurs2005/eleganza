@@ -2,7 +2,8 @@ import './FronItems.css'
 import React,{useState} from "react"
 import FrontItem from "../FrontItem/FrontItem"
 export default function FronItems(){
-    const [items,setItems] = useState([{
+    const [items,setItems] = useState(
+        [{
         "id": 2,
         "brend": "Michael Kors",
         "shopCotegory": "brends",

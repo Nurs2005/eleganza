@@ -1,3 +1,4 @@
+
 import './FrontPage.css'
 import React, { useState, useEffect } from 'react';
 import HeaderBlock from "../../components/HeaderBlock/HeaderBlock"
