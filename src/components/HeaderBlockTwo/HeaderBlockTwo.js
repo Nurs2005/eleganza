@@ -3,8 +3,7 @@ import "./HeaderBlockTwo.css";
 import { CiMenuBurger } from "react-icons/ci";
 import { IoIosSearch } from "react-icons/io";
 import { IoBagHandleOutline } from "react-icons/io5";
-
-export default function HeaderBlock({isMenuOpen,toggleMenu}) {
+export default function HeaderBlockTwo({ toggleMenu }) {
     const [isHovered, setIsHovered] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
@@ -33,38 +32,38 @@ export default function HeaderBlock({isMenuOpen,toggleMenu}) {
         };
     }, []);
 
-    const containerClasses = `header ${isHovered  ? 'hovered' : ''} ${scrolled ? 'scrolled' : ''}`;
+    const containerClasses = `new-header ${scrolled ? 'is-scrolled' : ''}`;
 
     return (
         <div>
             <header className={containerClasses}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
-                <nav className="nav">
-                    <div className="menuBlock">
-                        <div className={`menu`} onClick={toggleMenu}>
+                <nav className="new-nav">
+                    <div className="new-menuBlock">
+                        <div className={`new-menu`} onClick={toggleMenu}>
                             <CiMenuBurger />
-                            <span>Menu</span> 
+                            <span>Menu</span>
                         </div>
-                        <div className="menu">
+                        <div className="new-menu">
                             <IoIosSearch />
-                            <span className="SearchSpan">Search</span>
+                            <span className="new-SearchSpan">Search</span>
                         </div>
                     </div>
-                    <div className="logo">
+                    <div className="new-logo">
                         <h1>ELEGANZA</h1>
                     </div>
-                    <div className="aboutInfo">
-                        <div className="callUs">
+                    <div className="new-aboutInfo">
+                        <div className="new-callUs">
                             <span>Call Us</span>
                         </div>
-                        <div className="wishList">
+                        <div className="new-wishList">
                             <span>WishList</span>
                         </div>
-                        <div className="myEl">
+                        <div className="new-myEl">
                             <span>myEl</span>
                         </div>
-                        <div className="bag">
+                        <div className="new-bag">
                             <IoBagHandleOutline />
                             <span>0</span>
                         </div>

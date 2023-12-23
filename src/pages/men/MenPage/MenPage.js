@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
-import HeaderTwo from "../../../components/HeaderBlockTwo/HeaderBlockTwo"
 import MensItems from "../MensItems/MensItems";
+import HeaderBlockTwo from "../../../components/HeaderBlockTwo/HeaderBlockTwo";
 import './MenPage.css';
 
 export default function MenPage() {
@@ -267,7 +267,7 @@ export default function MenPage() {
 
     return (
         <div>
-            <HeaderTwo/>
+            <HeaderBlockTwo/>
             <div className="itemsBlock">
                 <div className="filter">
                     <div className="filterButton" onClick={() => setFilterCategory("all")}>All</div>

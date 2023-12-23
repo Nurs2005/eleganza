@@ -4,7 +4,7 @@ import { CiMenuBurger } from "react-icons/ci";
 import { IoIosSearch } from "react-icons/io";
 import { IoBagHandleOutline } from "react-icons/io5";
 
-export default function HeaderBlock({isMenuOpen,toggleMenu}) {
+export default function HeaderBlock({toggleMenu,isMenuOpen}) {
     const [isHovered, setIsHovered] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
@@ -33,7 +33,7 @@ export default function HeaderBlock({isMenuOpen,toggleMenu}) {
         };
     }, []);
 
-    const containerClasses = `header ${isHovered  ? 'hovered' : ''} ${scrolled ? 'scrolled' : ''}`;
+    const containerClasses = `header ${isMenuOpen ? 'headerOff' : ''} ${isHovered && !isMenuOpen ? 'hovered' : ''} ${scrolled && !isMenuOpen ? 'scrolled' : ''}`;
 
     return (
         <div>
